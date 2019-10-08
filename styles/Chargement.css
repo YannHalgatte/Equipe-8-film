@@ -1,1 +1,8 @@
-body{background-color:#ffcc00 };
+body{
+  margin:0;
+  padding:0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size:12px;
+  color:#444;background-color:#ffcc00;
+}
+;
