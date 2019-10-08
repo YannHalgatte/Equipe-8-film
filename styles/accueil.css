@@ -25,12 +25,13 @@
 }
 
 .accueil_bouton_cliqueici.crack{
-  clip-path: polygon(-10% 0%, 40% 0%, 75% 100%, -10% 100%);
+  clip-path: polygon(0% 0%, 53% 0%, 58% 100%, 0% 100%);
   animation: accueil_bouton_cliqueici_crack1 0.3s ease-in forwards;
   position: absolute;
+  width: 33vw
 }
 .accueil_bouton_cliqueici2.crack{
-  clip-path: polygon(40% 0%, 110% 0%, 110% 100%, 75% 100%);
+  clip-path: polygon(53% 0%, 100% 0%, 100% 100%, 58% 100%);
   animation: accueil_bouton_cliqueici_crack2 0.3s ease-in forwards;
   position: absolute;
   display: block;
@@ -42,9 +43,9 @@
 }
 @keyframes accueil_bouton_cliqueici_crack1 {
   0% {transform: translate(0%,0%); }
-  100% {transform: translate(-10%, 1%) rotateZ(5deg); }
+  100% {transform: translate(-7%, -13%) rotateZ(-5deg); }
 }
 @keyframes accueil_bouton_cliqueici_crack2 {
   0% {transform: translate(0%,0%); }
-  100% {transform: translate(10%, -1%) rotateZ(-5deg); }
+  100% {transform: translate(7%, 7%) rotateZ(4deg); }
 }
