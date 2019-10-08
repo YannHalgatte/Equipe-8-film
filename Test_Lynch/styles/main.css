@@ -5,6 +5,7 @@ html,body {
   height: 100vh;
   background: #000;
   overflow: hidden;
+
 }
 .container{
   margin: 0 auto;
