@@ -1,0 +1,21 @@
+.accueil_container{
+  padding-top: 90px;
+  margin: 0 auto;
+  width: 768px;
+}
+.accueil_logo{
+  max-width: 100%;
+  height: auto;
+}
+.accueil_bouton_cliqueici{
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  height: 4rem;
+  cursor: pointer;
+  font-size: 3rem;
+  font-family: 'Hind', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #FEC200;
+}
