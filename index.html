@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" type="text/css" href="styles/header.css">
-    <link rel="stylesheet" type="text/css" href="styles/accueil.css">
+    <link rel="stylesheet" type="text/css" href="styles/homepage.css">
     <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
-    <title>Brice de nice - Accueil</title>
+    <title>Brice de nice - homepage</title>
   </head>
   <body>
     <header class="header_container">
@@ -15,24 +15,37 @@
       <div class="header_bloc01 active"></div>
       <div class="header_bloc02"></div>
     </header>
-    <div class="accueil_container">
-      <img class="accueil_logo" src="images/accueil_logo.png" alt="logo brice de nice, tu m'as cassé">
-      <div class="accueil_bouton_cliqueici_container">
-        <div class="accueil_bouton_cliqueici">
+    <div class="homepage_container">
+      <img class="homepage_logo" src="images/homepage_logo.png" alt="logo brice de nice, tu m'as cassé">
+      <div class="homepage_button_cliqueici_container">
+        <div class="homepage_button_cliqueici">
           <span>Clique ici</span>
         </div>
-        <div class="accueil_bouton_cliqueici displayNone accueil_bouton_cliqueici2">
+        <div class="homepage_button_cliqueici displayNone homepage_button_cliqueici2">
           <span>Clique ici</span>
         </div>
       </div>
-      <div class="accueil_bouton_mode">
+      <div class="homepage_video_trailer_container">
+        <video id="homepage_video_trailer" autoplay>
+          <source src="videos/brice_de_nice_trailer.mp4">
+        </video>
+        <div class="homepage_video_trailer_controls_bar">
+          <button id="playpausebtn" onclick="playPause(this,'homepage_video_trailer')"><img src="icons/play.svg" alt="bouton pour commencer la vidéo"></button>
+        </div>
+      </div>
+
+
+    </div>
+
+
+      <!-- <div class="homepage_button_mode">
         <span>Mode KC</span>
       </div>
     </div>
     <footer>
       Ce travail a été réalisé dans le cadre d’un projet pédagogique et à des fins pédagogiques. Les droits d’exploitation n’ont pas fait l’objet d’une vérification, ni d’une acquisition.
-    </footer>
-    <script type="text/javascript" src="scripts/accueil.js">
+    </footer> -->
+    <script type="text/javascript" src="scripts/homepage.js">
 
     </script>
   </body>
