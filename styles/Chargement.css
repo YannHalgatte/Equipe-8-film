@@ -1,4 +1,7 @@
-body{
+
+
+.Chargement{
+  z-index: 1100;
   margin:0;
   padding:0;
   text-align: center;
@@ -8,7 +11,69 @@ body{
   background-color:#FFCC00;
 }
 ;
-.Chargement{
-  width: auto;
-  color:#FFFFFF;
+.divback{
+z-index: 1005
+  width: 200px;
+  height: 200px
+  color:#fff;
+}
+.divfront{
+  z-index: 1010
+  height: 150px;
+  width: 400px
+
+
+background-color:#FFFFFF;
+ }
+.Chargebrice{
+  display: flex;
+  margin:   100px 50px auto;
+}
+
+@-webkit-keyframes masuperanimation { /* Safari, Opera, Chrome */
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(150px);
+    }
+
+    100% {
+        transform: translateX(200px)
+    }
+}
+
+@keyframes masuperanimation { /* Tous les autres navigateurs */
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(150px);
+    }
+
+    100% {
+        transform: translateX(200px)
+    }
+}
+
+.divfront
+{
+  z-index: 1080;
+    margin-top: -100px;
+    width: 200px;
+    height: 150px;
+    background-color: #008;
+}
+
+.divfront
+{
+    -webkit-animation: masuperanimation 2s; /* Safari, Opera, Chrome */
+    animation: masuperanimation 2s; /* Tous les autres navigateurs */
+}
+.foot
+{
+  margin-top: 650px;
+
 }
