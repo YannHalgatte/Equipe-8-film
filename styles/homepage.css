@@ -2,11 +2,14 @@ html, body{
   background-color: #FFDC20;
 }
 
-.homepage_container{
+.homepage_part_1_container{
   padding-top: 90px;
   margin: 0 auto;
   width: 960px;
 }
+
+/* homepage part 1 */
+
 .homepage_logo{
   max-width: 100%;
   height: auto;
@@ -110,4 +113,12 @@ html, body{
 .homepage_button_modenice a:hover{
   color: #333333;
   text-decoration: none;
+}
+
+
+/* homepage part 2 */
+
+.homepage_part_2_container{
+  padding-top: 500px;
+  background-color: #CADFF2;
 }
