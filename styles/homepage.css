@@ -92,9 +92,9 @@ html, body{
 }
 
 .homepage_button_modenice{
-  width: 34%;
+  width: 20%;
   text-align: center;
-  margin: 0 auto;
+  margin: 5rem auto 5rem auto;
   height: 4rem;
   cursor: pointer;
   font-size: 3rem;
@@ -121,4 +121,13 @@ html, body{
 .homepage_part_2_container{
   padding-top: 500px;
   background-color: #CADFF2;
+}
+
+/* easteregg */
+
+.easteregg01{
+  width: 9.375rem;
+  position: absolute;
+  right: 8rem;
+  top: 3rem;
 }
