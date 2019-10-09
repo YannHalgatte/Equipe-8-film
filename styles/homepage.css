@@ -1,3 +1,7 @@
+html, body{
+  background-color: #FFDC20;
+}
+
 .homepage_container{
   padding-top: 90px;
   margin: 0 auto;
@@ -14,16 +18,21 @@
   justify-content: center;
 }
 .homepage_button_cliqueici{
-  width: 60%;
+  width: 45%;
   text-align: center;
   margin: 0 auto;
-  height: 7rem;
+  height: 7.5rem;
   cursor: pointer;
-  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 4rem;
   font-family: 'Hind', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: #FEC200;
+  background-color: #161616;
+  color: #FFDC20;
+  border-radius: 10px;
 }
 .displayNone{
   display: none;
@@ -59,7 +68,7 @@
   text-transform: uppercase;
   line-height: 2.7rem;
   margin-top: 4rem;
-  width: 50%;
+  width: 60%;
   border-left:  0.2rem solid;
 }
 
@@ -69,4 +78,36 @@
   height: auto;
   margin-top: 3rem;
   outline: none;
+}
+
+
+/* Mode nice */
+
+.homepage_button_modenice_container{
+  display: flex;
+  justify-content: center;
+}
+
+.homepage_button_modenice{
+  width: 34%;
+  text-align: center;
+  margin: 0 auto;
+  height: 4rem;
+  cursor: pointer;
+  font-size: 3rem;
+  font-family: 'Hind', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #FFDC20;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.homepage_button_modenice a{
+  color: #000;
+  text-decoration: none;
+}
+.homepage_button_modenice a:hover{
+  color: #333333;
+  text-decoration: none;
 }

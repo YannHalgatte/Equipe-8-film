@@ -1,9 +1,7 @@
 html, body{
   width: 100vw;
-  background-color: 000;
   margin: 0;
   padding: 0;
-  background-color: #000;
   overflow-y: auto;
   overflow-x: hidden;
   overflow : -moz-scrollbars-horizontal;
@@ -20,19 +18,19 @@ html, body{
   text-transform: uppercase;
 }
 .header_container div:nth-child(1){
-  background-color: #FFCC00;
+  background-color: #FFDC20;
   width: 50%;
   height: 2.25rem;
   justify-content: center;
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: #000;
+  color: #161616;
   padding-top: 0rem;
   z-index: 1000;
 }
 .header_container div:nth-child(1) a{
-  color: #000;
+  color: #161616;
   text-decoration: none;
 }
 .header_container div:nth-child(1) a:hover{
@@ -40,21 +38,21 @@ html, body{
   text-decoration: none;
 }
 .header_bloc01.active{
-  background-color: #FFCC00;
+  background-color: #FFDC20;
   height: 3rem;
   width: 100vw;
   position: absolute;
   z-index: 990;
 }
 .header_bloc02.active{
-  background-color: #212121;
+  background-color: #161616;
   height: 3rem;
   width: 100vw;
   position: absolute;
   z-index: 990;
 }
 .header_container div:nth-child(2){
-  background-color: #212121;
+  background-color: #161616;
   width: 50%;
   height: 2.25rem;
   justify-content: center;
@@ -69,6 +67,6 @@ html, body{
   text-decoration: none;
 }
 .header_container div:nth-child(2) a:hover{
-  color: #FFCC00;
+  color: #FFDC20;
   text-decoration: none;
 }

@@ -28,9 +28,7 @@ let MyButtonCliqueIci = new ButtonCliqueIci()
 MyButtonCliqueIci.init()
 
 
-function eventualRedirect(redirectTo, timeoutPeriod) {
-	setTimeout("location.href = redirectTo;",timeoutPeriod);
-}
+
 
 
 
