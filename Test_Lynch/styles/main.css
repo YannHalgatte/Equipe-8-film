@@ -5,8 +5,12 @@ html,body {
   height: 100vh;
   background: #000;
   overflow: hidden;
-
 }
+
+#customPointer{
+  pointer-events:none;
+}
+
 .container{
   margin: 0 auto;
   width: 960px;
