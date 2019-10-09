@@ -1,9 +1,5 @@
 
 
-
-
-
-
 .Chargement{
   z-index: 1100;
   margin:0;
@@ -17,7 +13,8 @@
 ;
 .divback{
 z-index: 1005
-  width: auto;
+  width: 200px;
+  height: 200px
   color:#fff;
 }
 .divfront{
@@ -30,8 +27,10 @@ background-color:#FFFFFF;
  }
 .Chargebrice{
   display: flex;
-  margin:   0 auto;
-}@-webkit-keyframes masuperanimation { /* Safari, Opera, Chrome */
+  margin:   100px 50px auto;
+}
+
+@-webkit-keyframes masuperanimation { /* Safari, Opera, Chrome */
     0% {
         transform: translateX(0px);
     }
@@ -41,7 +40,7 @@ background-color:#FFFFFF;
     }
 
     100% {
-        transform: translateX(150px) rotate(30deg);
+        transform: translateX(200px)
     }
 }
 
@@ -55,20 +54,26 @@ background-color:#FFFFFF;
     }
 
     100% {
-        transform: translateX(150px) rotate(30deg);
+        transform: translateX(200px)
     }
 }
 
 .divfront
 {
-    margin: 100px;
+  z-index: 1080;
+    margin-top: -100px;
     width: 200px;
     height: 150px;
     background-color: #008;
 }
 
-.divfront    
+.divfront
 {
     -webkit-animation: masuperanimation 2s; /* Safari, Opera, Chrome */
     animation: masuperanimation 2s; /* Tous les autres navigateurs */
+}
+.foot
+{
+  margin-top: 650px;
+
 }
