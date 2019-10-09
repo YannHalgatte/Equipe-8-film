@@ -1,14 +1,13 @@
 
 
-.Chargement{
-  z-index: 1100;
+body{
   margin:0;
   padding:0;
   text-align: center;
   font-family: "Roboto", "Arial", sans-serif;
-  font-size:12px;
+  font-size:40px;
   color:#444;
-  background-color:#FFCC00;
+  background-color:#AAEEFF;
 }
 ;
 .divback{
@@ -18,19 +17,20 @@ z-index: 1005
   color:#fff;
 }
 .divfront{
-  z-index: 1010
+  z-index: 1010;
+  margin: 0 auto;
   height: 150px;
   width: 400px
-
-
 background-color:#FFFFFF;
  }
 .Chargebrice{
+  z-index: 1100;
   display: flex;
-  margin:   100px 50px auto;
+  margin:   0 auto;
+  position: relative;
 }
 
-@-webkit-keyframes masuperanimation { /* Safari, Opera, Chrome */
+@-webkit-keyframes animation { /* Safari, Opera, Chrome */
     0% {
         transform: translateX(0px);
     }
@@ -38,13 +38,16 @@ background-color:#FFFFFF;
     50% {
         transform: translateX(150px);
     }
+    75% {
+        transform: translateX(200px)
+    }
 
     100% {
-        transform: translateX(200px)
+        transform: translateX(600px)
     }
 }
 
-@keyframes masuperanimation { /* Tous les autres navigateurs */
+@keyframes animation { /* Tous les autres navigateurs */
     0% {
         transform: translateX(0px);
     }
@@ -52,28 +55,32 @@ background-color:#FFFFFF;
     50% {
         transform: translateX(150px);
     }
+    75% {
+        transform: translateX(200px)
+    }
 
     100% {
-        transform: translateX(200px)
+        transform: translateX(600px)
     }
 }
 
 .divfront
 {
   z-index: 1080;
-    margin-top: -100px;
-    width: 200px;
+    margin-top: -200px;
+    width: 500px;
     height: 150px;
-    background-color: #008;
+    background-color: #000
 }
 
 .divfront
 {
-    -webkit-animation: masuperanimation 2s; /* Safari, Opera, Chrome */
-    animation: masuperanimation 2s; /* Tous les autres navigateurs */
+    -webkit-animation: £animation 10s; /* Safari, Opera, Chrome */
+    animation: animation 10s; /* Tous les autres navigateurs */
 }
 .foot
 {
   margin-top: 650px;
+  font-size:18px  ;
 
 }
