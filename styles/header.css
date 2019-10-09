@@ -23,11 +23,10 @@ html, body{
   width: 50%;
   height: 2.25rem;
   justify-content: center;
-  flex-direction: column;
   display: flex;
-  text-align: center;
   color: #000;
-  padding-top: 0.3125rem;
+  padding-top: 0rem;
+  z-index: 1000;
 }
 .header_container div:nth-child(1) a{
   color: #000;
@@ -37,15 +36,29 @@ html, body{
   color: #333;
   text-decoration: none;
 }
+.header_bloc01.active{
+  background-color: #FFCC00;
+  height: 3rem;
+  width: 100vw;
+  position: absolute;
+  z-index: 990;
+}
+.header_bloc02.active{
+  background-color: #212121;
+  height: 3rem;
+  width: 100vw;
+  position: absolute;
+  z-index: 990;
+}
 .header_container div:nth-child(2){
   background-color: #212121;
   width: 50%;
   height: 2.25rem;
   justify-content: center;
-  flex-direction: column;
   display: flex;
   text-align: center;
-  padding-top: 0.3125rem;
+  padding-top: 0rem;
+  z-index: 1000;
 }
 .header_container div:nth-child(2) a{
   color: #A8890D;
