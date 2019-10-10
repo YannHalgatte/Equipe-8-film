@@ -25,3 +25,21 @@ class ButtonCliqueIci {
 }
 let MyButtonCliqueIci = new ButtonCliqueIci()
 MyButtonCliqueIci.init()
+
+let homepage_button_ensavoirplus = document.querySelector('.header_ensavoirplus')
+homepage_button_ensavoirplus.addEventListener(
+  'click',
+  function(){
+    homepage_ensavoirplus.play();
+  }
+)
+const homepage_ensavoirplus = new Audio ('medias/viens-on-parle-de-moi.mp3')
+
+let homepage_easteregg01 = document.querySelector('.easteregg01_container')
+homepage_easteregg01.addEventListener(
+  'click',
+  function(){
+    home_page_easteregg01.play();
+  }
+)
+const home_page_easteregg01 = new Audio ('medias/safarte.mp3')
