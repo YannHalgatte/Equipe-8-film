@@ -23,7 +23,7 @@ html, body{
 
 .header_bloc01{
   background-color: #FFDC20;
-  height: 130rem;;
+  height: 100rem;;
   width: 100vw;
   position: absolute;
   z-index: -100;
@@ -107,6 +107,7 @@ html, body{
   display: block;
 }
 
+
 .homepage_logo_01_01.crack{
   clip-path: polygon(0% 0%, 54% 0%, 58% 100%, 0% 100%);
   animation: breakItemLeftSplit01 0.25s ease-in forwards;
@@ -188,13 +189,25 @@ html, body{
   display: block;
 }
 
+.homepage_logo_movie_01.crack{
+  clip-path: polygon(0 60%, 0 0, 74% 0, 54% 100%, 0 100%, 0 75%);
+  animation: breakItemLeftSplit01 0.25s ease-in forwards;
+  position: absolute;
+}
+.homepage_logo_movie_02.crack{
+  clip-path: polygon(99% 55%, 100% 0, 74% 0, 54% 100%, 100% 100%, 99% 65%);
+  animation: breakItemLeftSplit02 0.25s ease-in forwards;
+  position: absolute;
+  display: block;
+}
+
 @keyframes breakItemGravityRight {
   0% {transform: translate(0%,0%); }
-  100% {transform: translate(-9%, 90%) rotateZ(-9deg); }
+  100% {transform: translate(-9%, 125%) rotateZ(-9deg); }
 }
 @keyframes breakItemGravityLeft {
   0% {transform: translate(0%,0%); }
-  100% {transform: translate(9%, 90%) rotateZ(9deg); }
+  100% {transform: translate(9%, 125%) rotateZ(9deg); }
 }
 
 .homepage_img_pin_container{
@@ -205,4 +218,27 @@ html, body{
 
 .homepage_img_pin_container img{
   width: 3rem;
+}
+
+.homepage_img_pin, .homepage_logo_movie, .homepage_logo_01_01, .homepage_img_pack01, .homepage_img_pack02{
+  cursor: pointer;
+}
+
+.homepage_score{
+  position: fixed;
+  top: 3rem;
+  right: -1.5rem;
+  width: 9rem;
+  height: 3rem;
+  background-color: #FEB42A;
+  color: white;
+  border-radius: 3rem;
+  font-size: 2rem;
+  font-family: 'Hind', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000
+
 }

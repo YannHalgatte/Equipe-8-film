@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: column;
   height: 15rem;
-  background-image: url('../images/footer_sea.png');
+  background-image: url('../images/footer_sea.jpg');
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   padding-top: 5rem;
+  z-index: 200
 }
 
 

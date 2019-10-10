@@ -16,7 +16,12 @@ class BreakItem {
           let break_those_child = this.break_those_container.appendChild(this.break_those_space)
         }
         this.break_those_space.style.height = (this.break_those_height + 'px')
-        this.break_those[1].classList.remove("displayNone")
+
+        if (this.break_those[1].classList.contains('displayNone')) {
+          this.break_those[1].classList.remove("displayNone")
+          MyScore.score= MyScore.score +1
+          MyScore.init()
+        }
         for (let i = 0; i < this.break_those.length; i++) {
           this.break_those[i].classList.add("crack")
           this.break_those[i].style.width = this.break_those_width+"px";
@@ -41,6 +46,8 @@ let BreakHomepagePack02 = new BreakItem(document.querySelector('.homepage_img_pa
 BreakHomepagePack02.init()
 let BreakHomepageButtonModenice = new BreakItem(document.querySelector('.homepage_button_modenice_container'),document.querySelectorAll('.homepage_button_modenice'))
 BreakHomepageButtonModenice.init()
+let BreakHomepageLogoSeeMovie = new BreakItem(document.querySelector('.homepage_logo_movie'),document.querySelectorAll('.homepage_logo_movie_01'))
+BreakHomepageLogoSeeMovie.init()
 
 
 class WipeItem{
@@ -52,10 +59,26 @@ class WipeItem{
       'click',
       ()=>{
         this.wipe_this.classList.add("displayNone")
+        MyScore.score= MyScore.score +1
+        MyScore.init()
       }
     )
   }
 }
-
 let HomepageRedPin = new WipeItem(document.querySelector('.homepage_img_pin img'))
 HomepageRedPin.init()
+
+
+class Score {
+  constructor(score) {
+    this.score = score
+    this.scoreShow = document.querySelector('.homepage_score')
+  }
+  init(){
+    this.scoreShow.innerHTML = this.score +'/10'
+    if (this.score==10) {
+      console.log('change page')
+    }
+  }
+}
+let MyScore = new Score(0)
