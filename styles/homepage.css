@@ -189,8 +189,8 @@
   flex-direction: column;
 }
 
-.homepage_date{
-  margin: 0 auto;
+.homepage_logo_movie{
+  margin: 2rem auto;
 }
 
 .homepage_date span{
@@ -198,6 +198,8 @@
   font-family: 'Hind', sans-serif;
   font-weight: bold;
 }
+
+
 
 /* easteregg */
 
