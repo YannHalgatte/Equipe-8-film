@@ -1,28 +1,20 @@
-html, body{
-  background-color: #FFDC20;
-}
-
+/* homepage part 1 */
 .homepage_part_1_container{
   padding-top: 5.625rem;
   margin: 0 auto;
   width: 60rem;
   padding-bottom: 3rem;
 }
-
-/* homepage part 1 */
-
 .homepage_logo_container{
   width: 100%;
   height: auto;
   text-align: center;
 }
-
 .homepage_logo_container img{
   max-width: 100%;
   height: auto;
   padding: 2rem;
 }
-
 /* button Clique ici */
 .homepage_button_cliqueici_container{
   display: flex;
@@ -34,9 +26,6 @@ html, body{
   margin: 0 auto;
   height: 7.5rem;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   font-size: 4rem;
   font-family: 'Hind', sans-serif;
   font-weight: bold;
@@ -44,6 +33,12 @@ html, body{
   background-color: #161616;
   color: #FFDC20;
   border-radius: 10px;
+}
+.homepage_button_cliqueici span{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .displayNone{
   display: none;
@@ -67,11 +62,19 @@ html, body{
   0% {transform: translate(0%,0%); }
   100% {transform: translate(9%, 7%) rotateZ(9deg); }
 }
+.homepage_button_cliqueici_message_container{
+  height: 13rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .homepage_button_cliqueici_message{
   color: #FFF;
   text-align: left;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 4rem auto;
   font-size: 2rem;
   font-family: 'Hind', sans-serif;
@@ -79,7 +82,12 @@ html, body{
   text-transform: uppercase;
   line-height: 2.7rem;
   width: 60%;
-  border-left:  0.2rem solid;
+
+}
+
+.homepage_button_cliqueici_message span{
+    border-left:  0.2rem solid;
+    padding-left: 1rem;
 }
 
 /* video trailer */
@@ -89,8 +97,6 @@ html, body{
   margin-top: 0rem;
   outline: none;
 }
-
-
 /* Mode nice */
 
 .homepage_button_modenice_container{
@@ -181,6 +187,16 @@ html, body{
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.homepage_date{
+  margin: 0 auto;
+}
+
+.homepage_date span{
+  font-size: 3rem;
+  font-family: 'Hind', sans-serif;
+  font-weight: bold;
 }
 
 /* easteregg */

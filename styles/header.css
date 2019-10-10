@@ -39,14 +39,14 @@ html, body{
 }
 .header_bloc01.active{
   background-color: #FFDC20;
-  height: 3rem;
+  height: 100rem;;
   width: 100vw;
   position: absolute;
-  z-index: 990;
+  z-index: -100;
 }
 .header_bloc02.active{
   background-color: #161616;
-  height: 3rem;
+  height: 100rem;
   width: 100vw;
   position: absolute;
   z-index: 990;

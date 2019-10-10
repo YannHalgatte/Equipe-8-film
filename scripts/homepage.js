@@ -10,36 +10,18 @@ class ButtonCliqueIci {
   init(){
     this.button_cliqueici[0].addEventListener(
       'click',
-      function(){
-        MyButtonCliqueIci.button_cliqueici_message.classList.remove("displayNone")
-        MyButtonCliqueIci.button_cliqueici_space.style.height = (MyButtonCliqueIci.button_cliqueici_height + 'px')
-        let button_cliqueici_child = MyButtonCliqueIci.button_cliqueici_container.appendChild(MyButtonCliqueIci.button_cliqueici_space)
-
-        for (let i = 0; i < MyButtonCliqueIci.button_cliqueici.length; i++) {
-          MyButtonCliqueIci.button_cliqueici[i].classList.add("crack")
-          MyButtonCliqueIci.button_cliqueici[i].style.width = MyButtonCliqueIci.button_cliqueici_width+"px";
+      ()=>{
+        this.button_cliqueici_message.classList.remove("displayNone")
+        this.button_cliqueici_space.style.height = (this.button_cliqueici_height + 'px')
+        this.button_cliqueici[1].classList.remove("displayNone")
+        let button_cliqueici_child = this.button_cliqueici_container.appendChild(this.button_cliqueici_space)
+        for (let i = 0; i < this.button_cliqueici.length; i++) {
+          this.button_cliqueici[i].classList.add("crack")
+          this.button_cliqueici[i].style.width = this.button_cliqueici_width+"px";
         }
       }
     )
-
   }
 }
 let MyButtonCliqueIci = new ButtonCliqueIci()
 MyButtonCliqueIci.init()
-
-
-
-
-
-
-
-// function playPause(btn,vid){
-// 	var vid = document.getElementById(vid);
-// 	if(vid.paused){
-// 		vid.play();
-// 		btn.innerHTML = "Pause";
-// 	} else {
-// 		vid.pause();
-// 		btn.innerHTML = "Play";
-// 	}
-// }

@@ -3,28 +3,42 @@
   <head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
-    <link rel="stylesheet" type="text/css" href="styles/header.css">
     <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <link rel="stylesheet" type="text/css" href="styles/homepage.css">
+    <link rel="stylesheet" type="text/css" href="styles/homepage_modenice.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <title>Brice de nice - Bienvenue</title>
+    <title>Brice de nice - Mode NICE</title>
   </head>
   <body>
     <header class="header_container">
-      <div class="header_div">
-        <a href="index.html#homepage_video_trailer">Bande-annonce</a>
+      <div class="header_div_01">
+        <div class="header_div_01_01">
+          <a href="#">Bande-annonce</a>
+        </div>
+        <div class="header_div_01_01 displayNone header_div_01_02">
+          <a href="#">Bande-annonce</a>
+        </div>
       </div>
-      <div class="header_div">
-        <a href="#" onclick="JavaScript:eventualRedirect(redirectTo='ensavoirplus.html', timeoutPeriod='1500')">En savoir +</a>
+      <div class="header_div_02">
+        <div class="header_div_02_01">
+          <a href="#">En savoir +</a>
+        </div>
+        <div class="header_div_02_01 displayNone header_div_02_02">
+          <a href="#">En savoir +</a>
+        </div>
       </div>
-      <div class="header_bloc01 active"></div>
-      <div class="header_bloc02"></div>
+      <div class="header_bloc01"></div>
     </header>
     <div class="homepage_part_1_container">
       <div class="homepage_logo_container" data-aos="fade-up"
      data-aos-anchor-placement="center-bottom">
-        <img src="images/homepage_logo.png" alt="logo brice de nice, tu m'as cassé">
+        <div class="homepage_logo_01_01">
+          <img src="images/homepage_logo.png" alt="logo brice de nice, tu m'as cassé">
+        </div>
+        <div class="homepage_logo_01_01 displayNone homepage_logo_01_02">
+          <img src="images/homepage_logo.png" alt="logo brice de nice, tu m'as cassé">
+        </div>
       </div>
       <div class="homepage_button_cliqueici_container" data-aos="fade-up"
      data-aos-anchor-placement="center-bottom">
@@ -35,12 +49,22 @@
             <span>Clique ici</span>
           </div>
         </div>
-        <div class="homepage_button_cliqueici_message">
-          <span class="displayNone">Nan j'dec <br>C'est comme le H de Hawaï, <br>Ce bouton sert à rien </span>
+        <div class="homepage_button_cliqueici_message_container">
+          <div class="homepage_button_cliqueici_message">
+            <span class="displayNone">Nan j'dec <br>C'est comme le H de Hawaï, <br>Ce bouton sert à rien </span>
+          </div>
+          <div class="homepage_button_cliqueici_message displayNone homepage_button_cliqueici_message2">
+            <span class="">Nan j'dec <br>C'est comme le H de Hawaï, <br>Ce bouton sert à rien </span>
+          </div>
         </div>
-        <video id="homepage_video_trailer" autoplay controls>
-        <source src="videos/brice_de_nice_trailer.mp4">
-      </video>
+        <div class="homepage_video_trailer_container">
+          <video id="homepage_video_trailer" controls>
+            <source src="videos/brice_de_nice_trailer.mp4">
+          </video>
+          <video id="homepage_video_trailer homepage_video_trailer2" class="displayNone" controls>
+            <source src="videos/brice_de_nice_trailer.mp4">
+          </video>
+        </div>
     </div>
     <div class="homepage_part_2_container">
       <div class="homepage_part_2_actor_container">
@@ -63,16 +87,14 @@
     </div>
     <footer>
       <div class="footer">
-        <div class="homepage_button_modenice_container" data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom">
+        <div class="homepage_button_modenice_container">
           <div class="homepage_button_modenice">
-            <a href="index_mode_nice.html">Mode Nice</a>
+            <a href="#">Mode Nice</a>
           </div>
         </div>
         <img src="images/easteregg01.png" alt="brice de nice dans la mer" class="easteregg01">
 
-        <p class="footer_socialmedia" data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom">
+        <p class="footer_socialmedia">
         SUIVEZ NOUS SUR
         <a href="https://www.instagram.com/bricedenice_lefilm/?hl=fr">
           <img class="footer_icon_instagram" src="icons/instagram.svg" alt="icone instagram"/>
@@ -98,5 +120,6 @@
     </script>
     <script type="text/javascript" src="scripts/header.js"></script>
     <script type="text/javascript" src="scripts/homepage.js"></script>
+    <script type="text/javascript" src="scripts/homepage_modenice.js"></script>
   </body>
 </html>
