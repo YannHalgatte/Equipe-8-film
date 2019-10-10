@@ -101,7 +101,7 @@ class Score {
     this.scoreShow = document.querySelector('.homepage_score')
   }
   init(){
-    this.scoreShow.innerHTML = this.score +'/10'
+    this.scoreShow.innerHTML = 'Compteur de Kasses: '+ this.score +'/10'
     if (this.score==10) {
       document.location.href="dinosaur.html"
     }
