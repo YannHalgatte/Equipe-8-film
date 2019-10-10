@@ -30,12 +30,12 @@ class BreakItem {
     )
   }
 }
+let BreakHomepageLogo = new BreakItem(document.querySelector('.homepage_logo_container'),document.querySelectorAll('.homepage_logo_01_01'))
+BreakHomepageLogo.init()
 let BreakHeaderDiv01 = new BreakItem('none',document.querySelectorAll('.header_div_01_01'))
 BreakHeaderDiv01.init()
 let BreakHeaderDiv02 = new BreakItem('none',document.querySelectorAll('.header_div_02_01'))
 BreakHeaderDiv02.init()
-let BreakHomepageLogo = new BreakItem(document.querySelector('.homepage_logo_container'),document.querySelectorAll('.homepage_logo_01_01'))
-BreakHomepageLogo.init()
 let BreakHomepageCliqueiciMessage = new BreakItem(document.querySelector('.homepage_button_cliqueici_message_container'),document.querySelectorAll('.homepage_button_cliqueici_message'))
 BreakHomepageCliqueiciMessage.init()
 let BreakHomepageVideo = new BreakItem(document.querySelector('.homepage_video_trailer_container'),document.querySelectorAll('#homepage_video_trailer'))

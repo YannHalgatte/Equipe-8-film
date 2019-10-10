@@ -86,14 +86,6 @@ html, body{
   position: absolute;
   display: block;
 }
-@keyframes breakItemLeftSplit01 {
-  0% {transform: translate(0%,0%); }
-  100% {transform: translate(-9%, -13%) rotateZ(-9deg); }
-}
-@keyframes breakItemLeftSplit02 {
-  0% {transform: translate(0%,0%); }
-  100% {transform: translate(9%, 7%) rotateZ(9deg); }
-}
 
 .header_div_02_01.crack{
   clip-path: polygon(0% 0%, 54% 0%, 58% 100%, 0% 100%);
@@ -119,6 +111,15 @@ html, body{
   position: absolute;
   display: block;
 }
+@keyframes breakItemLeftSplit01 {
+  0% {transform: translate(0%,0%); }
+  100% {transform: translate(-9%, -13%) rotateZ(-9deg); }
+}
+@keyframes breakItemLeftSplit02 {
+  0% {transform: translate(0%,0%); }
+  100% {transform: translate(9%, 7%) rotateZ(9deg); }
+}
+
 
 .homepage_button_cliqueici_message.crack{
   clip-path: polygon(0% 0%, 54% 0%, 58% 100%, 0% 100%);
