@@ -49,7 +49,6 @@ BreakHomepageButtonModenice.init()
 let BreakHomepageLogoSeeMovie = new BreakItem(document.querySelector('.homepage_logo_movie'),document.querySelectorAll('.homepage_logo_movie_01'))
 BreakHomepageLogoSeeMovie.init()
 
-
 class WipeItem{
   constructor(wipethis) {
     this.wipe_this = wipethis
@@ -68,7 +67,6 @@ class WipeItem{
 let HomepageRedPin = new WipeItem(document.querySelector('.homepage_img_pin img'))
 HomepageRedPin.init()
 
-
 class Score {
   constructor(score) {
     this.score = score
@@ -77,8 +75,7 @@ class Score {
   init(){
     this.scoreShow.innerHTML = this.score +'/10'
     if (this.score==10) {
-      console.log('change page')
-      document.location.href="DinosaurGame/index.html"
+      document.location.href="dinosaur.html"
     }
   }
 }
