@@ -1,3 +1,31 @@
+class ButtonCliqueIci {
+  constructor() {
+    this.button_cliqueici_container = document.querySelector('.homepage_button_cliqueici_container')
+    this.button_cliqueici = document.querySelectorAll('.homepage_button_cliqueici_container div')
+    this.button_cliqueici_width = this.button_cliqueici[0].offsetWidth
+    this.button_cliqueici_height = this.button_cliqueici[0].offsetHeight
+    this.button_cliqueici_space = document.createElement("div");
+    this.button_cliqueici_message = document.querySelector('.homepage_button_cliqueici_message span')
+  }
+  init(){
+    this.button_cliqueici[0].addEventListener(
+      'click',
+      ()=>{
+        this.button_cliqueici_message.classList.remove("displayNone")
+        this.button_cliqueici_space.style.height = (this.button_cliqueici_height + 'px')
+        this.button_cliqueici[1].classList.remove("displayNone")
+        let button_cliqueici_child = this.button_cliqueici_container.appendChild(this.button_cliqueici_space)
+        for (let i = 0; i < this.button_cliqueici.length; i++) {
+          this.button_cliqueici[i].classList.add("crack")
+          this.button_cliqueici[i].style.width = this.button_cliqueici_width+"px";
+        }
+      }
+    )
+  }
+}
+let MyButtonCliqueIci = new ButtonCliqueIci()
+MyButtonCliqueIci.init()
+
 class BreakItem {
   constructor(container, breakthose) {
     this.break_those_container = container
@@ -49,7 +77,6 @@ BreakHomepageButtonModenice.init()
 let BreakHomepageLogoSeeMovie = new BreakItem(document.querySelector('.homepage_logo_movie'),document.querySelectorAll('.homepage_logo_movie_01'))
 BreakHomepageLogoSeeMovie.init()
 
-
 class WipeItem{
   constructor(wipethis) {
     this.wipe_this = wipethis
@@ -68,7 +95,6 @@ class WipeItem{
 let HomepageRedPin = new WipeItem(document.querySelector('.homepage_img_pin img'))
 HomepageRedPin.init()
 
-
 class Score {
   constructor(score) {
     this.score = score
@@ -77,9 +103,17 @@ class Score {
   init(){
     this.scoreShow.innerHTML = this.score +'/10'
     if (this.score==10) {
-      console.log('change page')
-      document.location.href="DinosaurGame/index.html"
+      document.location.href="dinosaur.html"
     }
   }
 }
 let MyScore = new Score(0)
+
+let mode_nice_easteregg01 = document.querySelector('.easteregg01_container')
+mode_nice_easteregg01.addEventListener(
+  'click',
+  function(){
+    modenice_easteregg01.play();
+  }
+)
+const modenice_easteregg01 = new Audio ('medias/non-non-il-faut-pas-faire-ca-faut-pas-faire-ca.mp3')
