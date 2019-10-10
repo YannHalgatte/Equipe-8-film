@@ -13,7 +13,6 @@ function clock(){
 function menuder(){
     document.getElementsByClassName('divfront').classList.add('animation');
 }
-
 chargement_button.addEventListener(
   'click',
   ()=>{
