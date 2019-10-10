@@ -1,12 +1,13 @@
 .footer{
   display: flex;
   flex-direction: column;
-  height: 20rem;
+  height: 15rem;
   background-image: url('../images/footer_sea.png');
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  padding-top: 5rem;
 }
 
 .footer_text_container{
@@ -35,6 +36,8 @@
   font-size: 0.8rem;
   color: #FFFFFF;
   margin-right: 2rem;
+
+  margin-top: 5rem;
 }
 .footer_icon_instagram, .footer_icon_twitter, .footer_icon_facebook{
   width: 20px;

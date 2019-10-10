@@ -35,3 +35,27 @@ let BreakHomepageCliqueiciMessage = new BreakItem(document.querySelector('.homep
 BreakHomepageCliqueiciMessage.init()
 let BreakHomepageVideo = new BreakItem(document.querySelector('.homepage_video_trailer_container'),document.querySelectorAll('#homepage_video_trailer'))
 BreakHomepageVideo.init()
+let BreakHomepagePack01 = new BreakItem(document.querySelector('.homepage_img_pack01'),document.querySelectorAll('.homepage_img_pack01_01'))
+BreakHomepagePack01.init()
+let BreakHomepagePack02 = new BreakItem(document.querySelector('.homepage_img_pack02'),document.querySelectorAll('.homepage_img_pack02_01'))
+BreakHomepagePack02.init()
+let BreakHomepageButtonModenice = new BreakItem(document.querySelector('.homepage_button_modenice_container'),document.querySelectorAll('.homepage_button_modenice'))
+BreakHomepageButtonModenice.init()
+
+
+class WipeItem{
+  constructor(wipethis) {
+    this.wipe_this = wipethis
+  }
+  init(){
+    this.wipe_this.addEventListener(
+      'click',
+      ()=>{
+        this.wipe_this.classList.add("displayNone")
+      }
+    )
+  }
+}
+
+let HomepageRedPin = new WipeItem(document.querySelector('.homepage_img_pin img'))
+HomepageRedPin.init()
