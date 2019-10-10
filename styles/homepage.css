@@ -68,7 +68,6 @@
   display: flex;
   justify-content: center;
 }
-
 .homepage_button_cliqueici_message{
   color: #FFF;
   text-align: left;
@@ -82,14 +81,11 @@
   text-transform: uppercase;
   line-height: 2.7rem;
   width: 60%;
-
 }
-
 .homepage_button_cliqueici_message span{
     border-left:  0.2rem solid;
     padding-left: 1rem;
 }
-
 /* video trailer */
 #homepage_video_trailer{
   width: 100%;
@@ -99,14 +95,12 @@
   cursor: pointer;
 }
 /* Mode nice */
-
 .homepage_button_modenice_container{
   display: flex;
   justify-content: center;
   width: 60rem;
   margin: 0 auto;
 }
-
 .homepage_button_modenice{
   width:30%;
   text-align: center;
@@ -132,10 +126,7 @@
   color: #333333;
   text-decoration: none;
 }
-
-
 /* homepage part 2 */
-
 .homepage_part_2_container{
   background-color: #CADFF2;
   width: 100vw;
@@ -152,7 +143,6 @@
   position: relative;
   z-index: 50;
 }
-
 .homepage_img_pack01 img{
   width: 100%;
   margin-top: 0.7rem;
@@ -161,38 +151,15 @@
 .homepage_img_pack02 img{
   width: 100%
 }
-
 .homepage_img_pin{
   position: absolute;
   width: 2rem;
   left: calc(50% - 1rem);
   z-index: 100
 }
-
 .homepage_img_pin img{
   width: 3rem;
-
 }
-
-
-/* billeterie */
-
-.homepage_part_2_ticket{
-  width: 23rem;
-  text-align: center;
-  margin: 5rem auto 5rem auto;
-  height: 4rem;
-  cursor: pointer;
-  font-size: 3rem;
-  font-family: 'Hind', sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: #FFDC20;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .homepage_logo_movie{
   margin: 2rem auto;
   display: flex;
@@ -201,22 +168,18 @@
 .homepage_logo_movie_01 img{
   text-align: center;
 }
-
 .homepage_date span{
   font-size: 3rem;
   font-family: 'Hind', sans-serif;
   font-weight: bold;
 }
-
 /* easteregg */
-
 .easteregg01{
   width: 9.375rem;
   position: absolute;
   right: 8rem;
   top: 3rem;
 }
-
 .easteregg02{
   width: 6rem;
   position: absolute;

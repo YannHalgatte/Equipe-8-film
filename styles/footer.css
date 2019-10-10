@@ -10,15 +10,12 @@
   padding-top: 5rem;
   z-index: 200
 }
-
-
 .footer_text_container{
   background: rgba(0,0,0,0.5);
   display: flex;
   align-items: center;
   height: 3rem;
 }
-
 .footer_text{
   display: flex;
   margin: 0 auto;
@@ -29,7 +26,6 @@
   justify-content: center;
   text-align: center;
 }
-
 .footer_socialmedia{
   display: flex;
   justify-content: flex-end;
@@ -38,7 +34,6 @@
   font-size: 0.8rem;
   color: #FFFFFF;
   margin-right: 2rem;
-
   margin-top: 5rem;
 }
 .footer_icon_instagram, .footer_icon_twitter, .footer_icon_facebook{
