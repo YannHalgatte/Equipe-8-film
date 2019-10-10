@@ -18,7 +18,7 @@ html, body{
   text-transform: uppercase;
 }
 .header_container div:nth-child(1){
-  background-color: #FFDC20;
+  background-color: #FFCC00;
   width: 50%;
   height: 2.25rem;
   justify-content: center;
@@ -38,7 +38,7 @@ html, body{
   text-decoration: none;
 }
 .header_bloc01.active{
-  background-color: #FFDC20;
+  background-color: #FFCC00;
   height: 100rem;;
   width: 100vw;
   position: absolute;
@@ -67,6 +67,6 @@ html, body{
   text-decoration: none;
 }
 .header_container div:nth-child(2) a:hover{
-  color: #FFDC20;
+  color: #FFCC00;
   text-decoration: none;
 }

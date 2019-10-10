@@ -1,40 +1,40 @@
-
 let chargement_button = document.querySelector('button')
 let chargement_button_alreadyClicked = 0
 let chargement_button_autorizeToClick = false
+let chargement_start = document.querySelector('.chargement_start')
+let animation = document.querySelector('.divfront')
 
 const rire = new Audio ('medias/rireduja.mp3')
 
 function clock(){
   chargement_button_autorizeToClick=true
-  rire.loop = false;
         chargement_button.style.cursor = "pointer"
 }
-function menuder(){
-    document.getElementsByClassName('divfront').classList.add('animation');
+
+function rireFunction(){
+  rire.play()
+}
+
+function fade_out(){
+  chargement_start.style.display = "none"
+      animation.classList.add('animation')
+}
+
+function redirection(){
+  document.location.href="accueil.html"
 }
 chargement_button.addEventListener(
   'click',
-  ()=>{
+  function(){
     if (chargement_button_alreadyClicked==0) {
       chargement_button.style.cursor = "wait"
       chargement_button_alreadyClicked += 1
-      console.log('1e click')
-      rire.play();
-      rire.loop = true;
+      setTimeout(fade_out, 1000);
+      setTimeout(rireFunction, 4500);
       setTimeout(clock, 6500);
-      menuder()
-
+      setTimeout(redirection, 8500);
+      chargement_start.classList.add('fade-out')
       console.log(chargement_button_autorizeToClick)
-    }
-    else if((chargement_button_alreadyClicked==1) && (chargement_button_autorizeToClick==true)){
-      console.log('3e click')
-      rire.loop = false;
-      document.location.href="index.html"
-
-    }
-    else if(chargement_button_alreadyClicked==1){
-      console.log('2e click')
     }
   }
 )

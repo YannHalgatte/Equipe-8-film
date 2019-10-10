@@ -1,6 +1,4 @@
-
-
-body{
+html, body{
   z-index: 1001;
   margin:0;
   padding:0;
@@ -9,6 +7,7 @@ body{
   font-size:40px;
   color:#111;
   background-color:#FFCC00;
+  overflow:hidden;
 }
 
 
@@ -32,6 +31,22 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+.fade-out{
+  -webkit-animation: fade-out 1s;
+  animation-fill-mode: forwards;
+  animation: fade-out 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes fade-out {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-webkit-keyframes fade-out {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 @-webkit-keyframes animation {
   0% {
       transform: translateX(0px);
@@ -41,28 +56,28 @@ img {
   }
 
   30% {
-      transform: translateX(260px);
+      transform: translateX(300px);
   }
   45% {
-      transform: translateX(250px)
+      transform: translateX(350px)
   }
   52% {
-      transform: translateX(300px)
+      transform: translateX(200px)
   }
   60% {
       transform: translateX(350px)
   }
   75% {
-      transform: translateX(360px)
+      transform: translateX(320px)
   }
   80%{
-      transform: translateX(350px)
+      transform: translateX(200px)
   }
   85% {
-      transform: translateX(360px)
+      transform: translateX(100px)
   }
   90%{
-      transform: translateX(350px)
+      transform: translateX(300px)
   }
   100% {
       transform: translateX(390px)
@@ -78,35 +93,33 @@ img {
   }
 
   30% {
-      transform: translateX(260px);
-
+      transform: translateX(300px);
   }
   45% {
-      transform: translateX(250px)
+      transform: translateX(100px)
   }
   52% {
-      transform: translateX(300px)
+      transform: translateX(200px)
   }
   60% {
-      transform: translateX(350px)
+      transform: translateX(150px)
   }
   75% {
-      transform: translateX(360px)
+      transform: translateX(100px)
   }
   80%{
-      transform: translateX(350px)
+      transform: translateX(200px)
   }
   85% {
-      transform: translateX(360px)
+      transform: translateX(100px)
   }
   90%{
-      transform: translateX(350px)
+      transform: translateX(300px)
   }
   100% {
       transform: translateX(390px)
   }
 }
-
 .divfront
 {
   z-index: 1080;
@@ -115,19 +128,15 @@ img {
     width: 400px;
     height: 280px;
     background-color: #FFF;
-    -webkit-animation: £animation 14s;
-       animation-fill-mode: forwards;
-    animation: animation 14s;
-       animation-fill-mode: forwards;
+}
 
-}
 .animation{
-  z-index: 1080;
-  -webkit-animation: £animation 14s;
-     animation-fill-mode: forwards;
-  animation: animation 14s;
-     animation-fill-mode: forwards;
+  -webkit-animation: animation 8s;
+  animation-fill-mode: forwards;
+  animation: animation 8s;
+  animation-fill-mode: forwards;
 }
+
 .but{
   z-index: 1200;
 }
@@ -142,6 +151,7 @@ border-radius: 12px;
 display: inline-block;
 font-size: 16px;
 cursor: pointer;
+margin-top: 3rem;
 }
 .disabled {
   opacity: 0.6;
@@ -155,9 +165,6 @@ cursor: pointer;
 }
 
 
-
-
-
 }
 .container{
   z-index: 1800;
@@ -169,7 +176,7 @@ cursor: pointer;
 .background01{
   width: 100vw;
   height: 100vh;
-  background-color: #F8C501;
+  background-color: #FFCC00;
   clip-path: polygon(-10% 0%, 40% 0%, 75% 100%, -10% 100%);
   position: absolute;
   z-index: -1
@@ -178,66 +185,11 @@ cursor: pointer;
 .background02{
   width: 100vw;
   height: 100vh;
-  background-color: #F8C501;
+  background-color: #FFCC00;
   clip-path: polygon(39% 0%, 110% 0%, 110% 100%, 74% 100%);
   position:absolute;
   z-index: -1
 }
-
-.cracked {
-  font-family: Coolvetica, Arial;
-  font-size: 2rem;
-  color:#fff;
-  text-transform: uppercase;
-  position: relative;
-  animation-direction: alternate;
-}
-.cracked span:nth-child(1).absolute ,
-.cracked span:nth-child(2).absolute {
-  position: absolute;
-  top:0;
-  left:0;
-  z-index: -1;
-  display: block;
-}
-
-.cracked span:nth-child(2){
-  display: none;
-}
-
-.cracked span:nth-child(1).absolute  {
-  clip-path: polygon(-10% 0%, 40% 0%, 75% 100%, -10% 100%);
-}
-.cracked span:nth-child(1).crack{
-  animation: crack1 0.3s ease-in forwards;
-}
-.cracked span:nth-child(2).absolute {
-  clip-path: polygon(40% 0%, 110% 0%, 110% 100%, 75% 100%);
-}
-.cracked span:nth-child(2).crack {
-  animation: crack2 0.3s ease-in forwards;
-}
-
-@keyframes crack1 {
-  0% {transform: translate(0%,0%); }
-  100% {transform: translate(-25%, 1%) rotateZ(5deg); }
-}
-@keyframes crack2 {
-  0% {transform: translate(0%,0%); }
-  100% {transform: translate(25%, -1%) rotateZ(-5deg); }
-}
-
-
-/* Change mode */
-
-.changeMode {
-  background-color: #FFCC00;
-  width: 50px;
-  height: 50px;
-}
-
-
-
 
 .background{
   width: 100%;
@@ -245,13 +197,6 @@ cursor: pointer;
   position: absolute;
   z-index: 0;
   /* overflow: hidden; */
-}
-
-.background01.crack{
-  animation: crack1Background 0.6s ease-in forwards;
-}
-.background02.crack {
-  animation: crack2Background 0.6s ease-in forwards;
 }
 
 @keyframes crack1Background {
@@ -265,4 +210,23 @@ cursor: pointer;
 
 .displayNone{
   display: none;
+}
+
+.chargement_start{
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background-color: #fff;
+}
+
+.chargement_casque_audio{
+  width: 15%;
+  margin: 0 auto;
+  text-align: center;
+  fill: white;
+}
+
+
+.chargement_casque_audio img{
+  margin-top: 50%;
 }

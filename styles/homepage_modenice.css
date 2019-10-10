@@ -21,7 +21,7 @@ html, body{
   text-transform: uppercase;
 }
 .header_bloc01{
-  background-color: #FFDC20;
+  background-color: #FFCC00;
   height: 100rem;;
   width: 100vw;
   position: absolute;
@@ -31,7 +31,7 @@ html, body{
    width: 100%;
  }
 .header_container .header_div_01 div:nth-child(1), .header_container .header_div_01 div:nth-child(2){
-  background-color: #FFDC20;
+  background-color: #FFCC00;
   width: 100%;
   height: 2.25rem;
   justify-content: center;
@@ -66,7 +66,7 @@ html, body{
   text-decoration: none;
 }
 .header_container .header_div_02 div:nth-child(1) a:hover, .header_container .header_div_02 div:nth-child(2) a:hover{
-  color: #FFDC20;
+  color: #FFCC00;
   text-decoration: none;
 }
 .header_div_01_01.crack{

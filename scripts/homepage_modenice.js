@@ -45,6 +45,7 @@ class BreakItem {
         }
         this.break_those_space.style.height = (this.break_those_height + 'px')
 
+
         if (this.break_those[1].classList.contains('displayNone')) {
           this.break_those[1].classList.remove("displayNone")
           MyScore.score= MyScore.score +1
@@ -116,4 +117,5 @@ mode_nice_easteregg01.addEventListener(
     modenice_easteregg01.play();
   }
 )
-const modenice_easteregg01 = new Audio ('medias/non-non-il-faut-pas-faire-ca-faut-pas-faire-ca.mp3')
+const modenice_easteregg01 = new Audio ('medias/nononon.mp3')
+const body_song = new Audio ('medias/cassesong.mp3')

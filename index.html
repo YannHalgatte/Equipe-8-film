@@ -4,90 +4,33 @@
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" type="text/css" href="styles/header.css">
-    <link rel="stylesheet" type="text/css" href="styles/footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/homepage.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <title>Brice de nice - Bienvenue</title>
+    <link rel="stylesheet" type="text/css" href="styles/chargement.css">
+    <title>Page Brice de Nice</title>
   </head>
-  <body>
-    <header class="header_container">
-      <div class="header_div">
-        <a href="index.html#homepage_video_trailer">Bande-annonce</a>
-      </div>
-      <div class="header_div">
-        <a href="#" class="header_ensavoirplus" onclick="JavaScript:eventualRedirect(redirectTo='ensavoirplus.html', timeoutPeriod='1500')">En savoir +</a>
-      </div>
-      <div class="header_bloc01 active"></div>
-      <div class="header_bloc02"></div>
-    </header>
-    <div class="homepage_part_1_container">
-      <div class="homepage_logo_container">
-        <img src="images/homepage_logo.png" alt="logo brice de nice, tu m'as cassé">
-      </div>
-      <div class="homepage_button_cliqueici_container">
-        <div class="homepage_button_cliqueici">
-          <span>Clique ici</span>
-        </div>
-          <div class="homepage_button_cliqueici displayNone homepage_button_cliqueici2">
-            <span>Clique ici</span>
-          </div>
-        </div>
-        <div class="homepage_button_cliqueici_message">
-          <span class="displayNone">Nan j'dec <br>C'est comme le H de Hawaï, <br>Ce bouton sert à rien </span>
-        </div>
-        <video id="homepage_video_trailer" autoplay controls>
-        <source src="videos/brice_de_nice_trailer.mp4">
-      </video>
+ <body>
+   <div class="chargement_start">
+     <div class="chargement_casque_audio">
+       <img src="icons/headphones.svg" alt="casque audio">
+     </div>
+     <div class="chargement_text">
+       <span>Un casque audio est conseillé pour une meilleure expérience</span>
+     </div>
+     <div class="but">
+       <button class="button" type="button" name="button">
+         Continuer
+       </button>
+     </div>
+   </div>
+   <div class="Hiding">
+      <img class="Chargebrice" src="images/logo_brice.png" alt="Chargement cassé de Brice">
+         <div class="divfront" class=""></div>
+         <div class="divback"></div>
+         <div class="background">
+           <div class="background01"></div>
+           <div class="background02"></div>
+         </div>
     </div>
-    <div class="homepage_part_2_container">
-      <div class="homepage_part_2_actor_container">
-        <div class="homepage_img_pin">
-          <img src="images/pin.png" alt="pin rouge">
-        </div>
-        <div class="homepage_img_pack01">
-          <img src="images/actor_pack_01.png" alt="acteurs">
-        </div>
-        <div class="homepage_img_pack02">
-          <img src="images/actor_pack_02.png" alt="acteurs">
-        </div>
-      </div>
-      <div class="homepage_logo_movie">
-        <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=56143.html">
-          <img src="images/logo_see_the_movie.png" alt="Logo brice de nice sans texte">
-        </a>
-      </div>
-    </div>
-    <footer>
-      <div class="footer">
-        <div class="homepage_button_modenice_container">
-          <div class="homepage_button_modenice">
-            <a href="index_mode_nice.html">Mode Nice</a>
-          </div>
-        </div>
-        <div class="easteregg01_container">
-          <img src="images/easteregg01.png" alt="brice de nice dans la mer" class="easteregg01">
-        </div>
-        <p class="footer_socialmedia">
-        SUIVEZ NOUS SUR
-        <a href="https://www.instagram.com/bricedenice_lefilm/?hl=fr">
-          <img class="footer_icon_instagram" src="icons/instagram.svg" alt="icone instagram"/>
-        </a>
-          <a href="https://www.facebook.com/BricedeNice.lefilm/">
-            <img class="footer_icon_facebook" src="icons/facebook.svg" alt="icone facebook"/>
-          </a>
-          <a href="https://twitter.com/bricedenice">
-            <img class="footer_icon_twitter" src="icons/twitter.svg" alt="icone twitter"/>
-          </a>
-          POUR PLUS DE CONTENU
-        </p>
-        <div class="footer_text_container">
-          <p class="footer_text" >
-            Ce travail a été réalisé dans le cadre d’un projet pédagogique et à des fins pédagogiques.<br>Les droits d’exploitation n’ont pas fait l’objet d’une vérification, ni d’une acquisition.
-          </p>
-        </div>
-      </div>
-    </footer>
-    <script type="text/javascript" src="scripts/header.js"></script>
-    <script type="text/javascript" src="scripts/homepage.js"></script>
   </body>
+  <script type="text/javascript" src="scripts/chargement.js">
+  </script>
 </html>
