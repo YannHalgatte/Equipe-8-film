@@ -79,6 +79,7 @@ img {
 
   30% {
       transform: translateX(260px);
+
   }
   45% {
       transform: translateX(250px)
@@ -120,6 +121,13 @@ img {
        animation-fill-mode: forwards;
 
 }
+.animation{
+  z-index: 1080;
+  -webkit-animation: £animation 14s;
+     animation-fill-mode: forwards;
+  animation: animation 14s;
+     animation-fill-mode: forwards;
+}
 .but{
   z-index: 1200;
 }
@@ -133,6 +141,7 @@ text-decoration: none;
 border-radius: 12px;
 display: inline-block;
 font-size: 16px;
+cursor: pointer;
 }
 .disabled {
   opacity: 0.6;
