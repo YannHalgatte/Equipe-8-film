@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   position: relative;
   padding-top: 5rem;
+  z-index: 200
 }
 
 .footer_text_container{
