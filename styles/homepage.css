@@ -63,7 +63,7 @@
   100% {transform: translate(9%, 7%) rotateZ(9deg); }
 }
 .homepage_button_cliqueici_message_container{
-  height: 13rem;
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -96,6 +96,7 @@
   height: auto;
   margin-top: 0rem;
   outline: none;
+  cursor: pointer;
 }
 /* Mode nice */
 
@@ -109,7 +110,7 @@
 .homepage_button_modenice{
   width:30%;
   text-align: center;
-  margin: 5rem auto;
+  margin: 0 auto;
   height: 5rem;
   cursor: pointer;
   display: flex;
@@ -148,6 +149,8 @@
 }
 .homepage_img_pack01, .homepage_img_pack02  {
   width: 50%;
+  position: relative;
+  z-index: 50;
 }
 
 .homepage_img_pack01 img{
@@ -163,6 +166,7 @@
   position: absolute;
   width: 2rem;
   left: calc(50% - 1rem);
+  z-index: 100
 }
 
 .homepage_img_pin img{
@@ -189,8 +193,13 @@
   flex-direction: column;
 }
 
-.homepage_date{
-  margin: 0 auto;
+.homepage_logo_movie{
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+}
+.homepage_logo_movie_01 img{
+  text-align: center;
 }
 
 .homepage_date span{
@@ -206,4 +215,12 @@
   position: absolute;
   right: 8rem;
   top: 3rem;
+}
+
+.easteregg02{
+  width: 6rem;
+  position: absolute;
+  top: 10vw;
+  left: 30vw;
+  z-index: -1;
 }
