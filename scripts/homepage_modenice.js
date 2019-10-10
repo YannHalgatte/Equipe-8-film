@@ -78,6 +78,7 @@ class Score {
     this.scoreShow.innerHTML = this.score +'/10'
     if (this.score==10) {
       console.log('change page')
+      document.location.href="DinosaurGame/index.html"
     }
   }
 }
