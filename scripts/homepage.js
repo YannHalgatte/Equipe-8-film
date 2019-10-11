@@ -33,7 +33,7 @@ homepage_button_ensavoirplus.addEventListener(
     homepage_ensavoirplus.play();
   }
 )
-const homepage_ensavoirplus = new Audio ('medias/viens-on-parle-de-moi.mp3')
+const homepage_ensavoirplus = new Audio ('medias/parledemoi.mp3')
 
 let homepage_easteregg01 = document.querySelector('.easteregg01_container')
 homepage_easteregg01.addEventListener(

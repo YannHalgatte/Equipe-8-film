@@ -67,7 +67,7 @@ let BreakHeaderDiv02 = new BreakItem('none',document.querySelectorAll('.header_d
 BreakHeaderDiv02.init()
 let BreakHomepageCliqueiciMessage = new BreakItem(document.querySelector('.homepage_button_cliqueici_message_container'),document.querySelectorAll('.homepage_button_cliqueici_message'))
 BreakHomepageCliqueiciMessage.init()
-let BreakHomepageVideo = new BreakItem(document.querySelector('.homepage_video_trailer_container'),document.querySelectorAll('#homepage_video_trailer'))
+let BreakHomepageVideo = new BreakItem(document.querySelector('.homepage_video_trailer_container'),document.querySelectorAll('.homepage_video_trailer'))
 BreakHomepageVideo.init()
 let BreakHomepagePack01 = new BreakItem(document.querySelector('.homepage_img_pack01'),document.querySelectorAll('.homepage_img_pack01_01'))
 BreakHomepagePack01.init()
@@ -118,4 +118,3 @@ mode_nice_easteregg01.addEventListener(
   }
 )
 const modenice_easteregg01 = new Audio ('medias/nononon.mp3')
-const body_song = new Audio ('medias/cassesong.mp3')

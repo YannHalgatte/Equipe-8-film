@@ -87,7 +87,7 @@
     padding-left: 1rem;
 }
 /* video trailer */
-#homepage_video_trailer{
+.homepage_video_trailer{
   width: 100%;
   height: auto;
   margin-top: 0rem;
